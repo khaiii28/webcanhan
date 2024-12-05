@@ -1,0 +1,13 @@
+{
+  "files": {
+    "main.css": "/webcanhan/static/css/main.f03c3c10.css",
+    "main.js": "/webcanhan/static/js/main.78b599b0.js",
+    "index.html": "/webcanhan/index.html",
+    "main.f03c3c10.css.map": "/webcanhan/static/css/main.f03c3c10.css.map",
+    "main.78b599b0.js.map": "/webcanhan/static/js/main.78b599b0.js.map"
+  },
+  "entrypoints": [
+    "static/css/main.f03c3c10.css",
+    "static/js/main.78b599b0.js"
+  ]
+}
