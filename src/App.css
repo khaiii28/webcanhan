@@ -1,38 +1,105 @@
-.App {
+body {
+  font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif; /* Thay đổi font cho nhẹ nhàng hơn */
+  background-color: #121212; /* Nền đen nhẹ */
+  color: #f1f1f1; /* Chữ màu trắng sáng nhưng không quá chói */
+  margin: 0;
+  padding: 0;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
   text-align: center;
+  flex-direction: column;
 }
 
-.App-logo {
-  height: 40vmin;
-  pointer-events: none;
-}
-
-@media (prefers-reduced-motion: no-preference) {
-  .App-logo {
-    animation: App-logo-spin infinite 20s linear;
-  }
-}
-
-.App-header {
-  background-color: #282c34;
-  min-height: 100vh;
+.app {
+  background: rgba(18, 18, 18, 0.9); /* Nền đen mờ hơn */
+  padding: 40px 30px; /* Tăng khoảng cách padding để có thêm không gian */
+  border-radius: 12px;
+  width: 90%; /* Đảm bảo giao diện đẹp hơn */
+  max-width: 600px;
+  box-shadow: 0px 0px 20px rgba(0, 0, 0, 0.7);
+  overflow-y: auto;
   display: flex;
   flex-direction: column;
   align-items: center;
-  justify-content: center;
-  font-size: calc(10px + 2vmin);
-  color: white;
 }
 
-.App-link {
-  color: #61dafb;
+.title {
+  font-size: 3em; /* Kích thước chữ tiêu đề */
+  margin-bottom: 15px;
+  font-weight: 600; /* Đậm chữ tiêu đề */
+  color: #fff; /* Màu trắng nhẹ */
+  letter-spacing: 1px; /* Khoảng cách giữa các chữ */
 }
 
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
+.clock {
+  margin-top: 30px; /* Tăng khoảng cách để đồng hồ không bị che */
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.clock h1 {
+  font-size: 5em; /* Kích thước chữ đồng hồ */
+  margin: 10px 0; /* Tăng khoảng cách để dễ nhìn hơn */
+  color: #8be0a3; /* Màu chữ đồng hồ xanh lá nhạt */
+  text-shadow: 0px 0px 15px rgba(139, 224, 163, 0.5); /* Đổ bóng nhẹ */
+}
+
+.clock h2 {
+  font-size: 2em; /* Kích thước chữ ngày tháng */
+  margin: 10px 0;
+  color: #d1d1d1; /* Màu chữ ngày tháng sáng nhẹ */
+}
+
+.intro {
+  margin-top: 40px;
+  text-align: left;
+  font-size: 1.2em;
+  color: #d1d1d1; /* Chữ giới thiệu màu sáng nhẹ */
+  line-height: 1.6; /* Khoảng cách dòng đẹp hơn */
+  max-height: 300px; /* Giới hạn chiều cao để tránh tràn */
+  overflow-y: auto; /* Cuộn dọc khi nội dung dài */
+}
+
+.intro h2,
+.intro h3 {
+  font-size: 1.6em;
+  color: #ff9900; /* Màu nhấn mạnh cho các tiêu đề */
+  font-weight: 500; /* Đậm các tiêu đề nhỏ */
+  margin-bottom: 10px;
+}
+
+.intro ul {
+  list-style: none;
+  padding: 0;
+}
+
+.intro li {
+  margin-bottom: 12px;
+  font-size: 1.1em;
+}
+
+.intro li a {
+  color: #8be0a3; /* Màu xanh nhẹ cho các liên kết */
+  text-decoration: none; /* Bỏ gạch dưới */
+}
+
+.intro li a:hover {
+  text-decoration: underline; /* Gạch dưới khi hover */
+}
+
+@media (max-width: 768px) {
+  .app {
+    width: 90%; /* Đảm bảo giao diện đẹp trên các thiết bị nhỏ */
   }
-  to {
-    transform: rotate(360deg);
+
+  .clock h1 {
+    font-size: 3.5em; /* Đồng hồ giảm kích thước trên màn hình nhỏ */
+  }
+
+  .intro {
+    font-size: 1em; /* Chữ giới thiệu nhỏ hơn */
   }
 }
